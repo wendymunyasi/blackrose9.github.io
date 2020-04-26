@@ -1,7 +1,7 @@
 body{ 
    background-image: url("../img/space2.jpg");
-   /* background-size: cover; */
    font-family: 'Raleway', sans-serif;
+   color: white;
 }
 
 /* Navigation Styling */
@@ -16,19 +16,38 @@ body{
    overflow: hidden;
 }
 
+#pageNavigation a{
+   background-color: rgb(0, 0, 54);
+   opacity: 0.5;
+   display: block;
+   padding: 5%;
+   text-align: center;
+}
+#pageNavigation a.active {
+   border: 1px solid white;
+}
+#pageNavigation a img {
+   width: 50px;
+   height: 50px;
+}
 /* Content Styling */
 #pageContent{
-   margin-left: 13%;
-   width: 100vw;
+   margin-left: 10%;
+   width: 100vmax;
    padding: 0px 10px;
 }
 
 /* Individual Section Styling */
 section { 
-   height: 91vh;
+   height: 95vh;
+   width: 89vw;
    padding: 5%;
-   margin: 0 0 5% 0;
-   border-radius: 1%;
-   background-color: white;
-   opacity: 0.5;
+   border-bottom: 10px solid whitesmoke;
+   /* background-color: white;
+   opacity: 0.5; */
+}
+
+#home{
+   padding: 25%;
+   color: white;
 }
