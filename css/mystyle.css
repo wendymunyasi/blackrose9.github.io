@@ -74,7 +74,7 @@ section {
 .fun{
    background-repeat: no-repeat;
    padding-top: 5%;
-   /* border: 2px solid white; */
+   overflow: hidden;
 }
 #fun1{
    background-image: url("../img/space.jpg");
