@@ -56,8 +56,17 @@ section {
 
 }
 
-#projects{
-
+#projects{ 
+   
+}
+.row article{
+   margin-bottom: 1%;
+}
+.content{
+   color: rgb(0, 0, 54);
+   width: 95%;
+   background-color: #ffffff;
+   opacity: 0.6;
 }
 
 #skills{
@@ -67,12 +76,14 @@ section {
 #interests{
    
 }
+
 #interests div{
-   height: 50vh;
+   height: 45vh;
    border: 2.5px solid whitesmoke;
 }
 .fun{
    background-repeat: no-repeat;
+   background-size: auto;
    padding-top: 5%;
    overflow: hidden;
 }
@@ -81,7 +92,7 @@ section {
 }
 #fun2{
    background-image: url("../img/gaming.jpg");
-   /* background-size: cover; */
+   background-size: cover;
 }
 #fun3{
    background-image: url("../img/writing.jpg");
