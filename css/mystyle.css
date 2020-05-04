@@ -2,6 +2,7 @@ body{
    background-image: url("../img/space2.jpg");
    font-family: 'Raleway', sans-serif;
    color: white;
+   font-size: 100%;
 }
 
 /* Navigation Styling */
@@ -39,7 +40,7 @@ body{
 
 /* Individual Section Styling */
 section { 
-   height: auto;
+   height: 100vh;
    width: 89vw;
    padding: 5%;
    border-bottom: 10px solid whitesmoke;
@@ -52,12 +53,21 @@ section {
    color: white;
 }
 
-#aboutme{
+#aboutme {
 
 }
+#aboutme article{
+   padding: 14% 0px;
+   font-size: 1.7em;
+}
 
-#projects{ 
+#projects{
    
+}
+
+#projects article{
+   border-right: 7px groove rgb(52, 9, 92);
+   border-bottom: 7px groove rgb(52, 9, 92);
 }
 .content{
    color: rgb(0, 0, 54);
@@ -77,6 +87,7 @@ section {
 #interests div{
    height: 45vh;
    border: 2.5px solid whitesmoke;
+   margin-top: 10%;
 }
 .fun{
    background-repeat: no-repeat;
@@ -99,5 +110,5 @@ section {
 }
 
 #contacts{
-
+   height: 50vh;
 }
