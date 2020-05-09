@@ -117,3 +117,12 @@ section {
 #contacts{
    height: 50vh;
 }
+
+#contacts h4 {
+   text-align: center; 
+   padding-top: 5%;
+}
+
+#contacts h4 a{
+   color: white;
+}
