@@ -54,17 +54,14 @@ section {
    color: white;
 }
 
-#aboutme {
+/* #aboutme {} */
 
-}
 #aboutme article{
    padding: 14% 0px;
    font-size: 1.7em;
 }
 
-#projects{
-
-}
+/* #projects{} */
 
 #projects article{
    border-right: 7px groove rgb(52, 9, 92);
@@ -77,9 +74,7 @@ section {
    
 }
 
-#interests{
-   
-}
+/* #interests{} */
 
 #interests div{
    height: 50vh;
@@ -123,10 +118,9 @@ section {
    height: auto;
 }
 
-#skills article img{
+#logos img{
    padding: unset;
 }
-
 
 #contacts{
    height: 50vh;
