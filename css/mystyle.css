@@ -86,20 +86,21 @@ section {
    background-color: white;
    border-right: 2px solid rgb(0, 0, 54);
 }
-#fun4{
-   border-right: none;
-}
 .fun h4{
 
    font-weight: bold;
    padding: 10%;
    background-size: cover;
    height: 30%;
-   /* overflow: hidden; */
 }
 .fun p{
    color: rgb(0, 0, 54);
    padding: 5%;
+}
+.fun a {
+   color: rgb(0, 0, 54);
+   text-decoration: underline;
+   font-style: italic;
 }
 #fun1 h4{
    background-image: url("../img/space.jpg");
@@ -109,6 +110,9 @@ section {
 }
 #fun3 h4{
    background-image: url("../img/writing.jpg");
+}
+#fun4{
+   border-right: none;
 }
 #fun4 h4{
    background-image: url("../img/compass1.jpg");
