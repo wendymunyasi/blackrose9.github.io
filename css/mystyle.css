@@ -1,14 +1,30 @@
-body{ 
-   background-image: url("../img/space2.jpg");
-   background-size: cover;
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   /* outline: 1px solid red; */
+   box-sizing: border-box;
+}
+
+html {
+   box-sizing: inherit;
+   overflow-x: hidden;
+}
+
+body {
+   /* background: url("../img/sam.jpg") repeat center center/contain; */
    font-family: 'Raleway', sans-serif;
    color: white;
    font-size: 100%;
+   width: 100vw;
+   height: 100%;
+   overflow-x: hidden;
 }
 
 /* Navigation Styling */
 #pageNavigation {
-   position: relative; 
+   position: relative;
    height: 100%;
    width: 10%;
    padding-top: 10%;
@@ -16,129 +32,167 @@ body{
    top: 0;
    left: 0;
    overflow: hidden;
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
 }
 
-#pageNavigation a{
+#pageNavigation a {
    background-color: rgb(0, 0, 54);
    display: block;
    padding: 5%;
    text-align: center;
 }
+
 #pageNavigation a.active {
    background-color: rgb(142, 142, 166);
    border: 2px solid rgb(142, 142, 166);
 }
+
 #pageNavigation a img {
    width: 50px;
    height: 50px;
 }
+
 /* Content Styling */
-#pageContent{
+#pageContent {
    margin-left: 10%;
-   width: 100vmax;
+   /* width: 100vw; */
    padding: 0px 10px;
 }
 
+h3 {
+   font-weight: bold;
+   font-size: 2rem;
+}
+
 /* Individual Section Styling */
-section { 
+section {
    height: 100vh;
-   width: 89vw;
+   /* width: 89vw; */
    padding: 5%;
    border-bottom: 10px solid whitesmoke;
    /* background-color: white;
    opacity: 0.5; */
 }
 
-#home{
+/* home section styles */
+section#home {
    padding: 25%;
    color: white;
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
 }
 
-/* #aboutme {} */
+/* about me section styles */
+section#aboutme {
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
+}
 
-#aboutme article{
+section#aboutme article {
    padding: 14% 0px;
    font-size: 1.7em;
 }
 
-/* #projects{} */
+/* projects section styles */
+section#projects{
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
+}
 
-#projects article{
+section#projects article {
    border-right: 7px groove rgb(52, 9, 92);
    border-bottom: 7px groove rgb(52, 9, 92);
    background-color: #ffffff;
 }
-.content{
+
+section#projects .content {
    color: rgb(0, 0, 54);
    width: 95%;
-   
 }
 
-/* #interests{} */
+section#projects .card-footer {
+   background-color: transparent !important;
+}
 
-#interests div{
+/* interests section styles */
+section#interests{
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
+}
+
+section#interests div {
    height: 50vh;
    border: 2.5px solid whitesmoke;
    margin-top: 5%;
 }
-.fun{
+
+section#interests .fun {
    padding: 0;
    background-color: white;
    border-right: 2px solid rgb(0, 0, 54);
 }
-.fun h4{
 
+section#interests .fun h4 {
    font-weight: bold;
    padding: 10%;
    background-size: cover;
    height: 30%;
 }
-.fun p{
+
+section#interests .fun p {
    color: rgb(0, 0, 54);
    padding: 5%;
 }
-.fun a {
+
+section#interests .fun a {
    color: rgb(0, 0, 54);
    text-decoration: underline;
    font-style: italic;
 }
-#fun1 h4{
-   background-image: url("../img/space.jpg");
+
+section#interests #fun1 h4 {
+   /* background-image: url("../img/space.jpg"); */
 }
-#fun2 h4{
+
+section#interests #fun2 h4 {
    background-image: url("../img/gaming.jpg");
 }
-#fun3 h4{
+
+section#interests #fun3 h4 {
    background-image: url("../img/writing.jpg");
 }
-#fun4{
+
+section#interests #fun4 {
    border-right: none;
 }
-#fun4 h4{
+
+section#interests #fun4 h4 {
    background-image: url("../img/compass1.jpg");
 }
 
-#skills{
+/* skills section styles */
+section#skills {
    height: auto;
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
 }
 
-#logos img{
+section#skills #logos img {
    padding: unset;
 }
 
-#contacts{
+/* contacts section styles */
+section#contacts {
    height: 50vh;
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
 }
 
-#contacts h4 {
-   text-align: center; 
+section#contacts #contacts h4 {
+   text-align: center;
    padding-top: 5%;
 }
 
-#contacts h4 a{
+section#contacts #contacts h4 a {
    color: white;
 }
 
+/* footer styles */
 footer {
    padding: 0.5%;
+   background: url("../img/milkyway.jpg") no-repeat center center/cover;
 }

@@ -9,13 +9,17 @@
 
         <title>Sarah Mwendwa</title>
 
-        <!--Styling -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Google font -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <!-- GSAP CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js">
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/mystyle.css">
     </head>
 
-    <body data-spy="scroll" data-target="#pageNavigation" data-offset="10" class="row">
+    <body data-spy="scroll" data-target="#pageNavigation" data-offset="10" class="row twinkling">
         <nav id="pageNavigation" class="list-group col-sm-3">
             <a href="#home" data-toggle="tooltip" data-placement="right" title="Home" class="list-group-item"><img src="img/navicons/ic_home_white_48dp.png"/></a>
             <a href="#aboutme" data-toggle="tooltip" data-placement="right" title="About Me" class="list-group-item"><img src="img/navicons/ic_account_box_white_48dp.png"/></a>
@@ -25,12 +29,15 @@
             <a href="#contacts" data-toggle="tooltip" data-placement="right" title="Contact Me" class="list-group-item"><img src="img/navicons/ic_forum_white_48dp.png"/></a>
         </nav>
 
-        <div id="pageContent" class="col-sm-9">
+        <div id="pageContent">
+            <!-- start of home section -->
             <section id="home">
                 <h1>Programming is like space, it's as endless and as mysterious as the human mind <i>~ SM</i></h1>
                 <a name="home"></a>
             </section>
-    
+            <!-- end of home section -->
+            
+            <!-- start of about me section -->
             <section id="aboutme">
                 <h3>About Me</h3>
                 <article>
@@ -41,98 +48,142 @@
                     <br>Also I'm a writer.</p>
                 </article>
             </section>
-    
+            <!-- end of about me section -->
+            
+            <!-- start of projects section -->
             <section id="projects">
                 <h3>What I have done</h3>
                 <br/>
                 <a name="projects"></a>
                 <div class="row">
-                    <article class="card-body col-md-3">
-                        <div class="content">    
-                            <h5 class="card-title">Requisition App</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Android</h6>
-                            <p class="card-text">An Android Application used by Field Sales Agents to easily convey an order to be prepared by main office.</p>
-                            <a href="https://github.com/blackrose9/turbo-requisition" class="card-link">Github Repo</a>
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">    
+                                <h5 class="card-title font-weight-bold">Requisition App</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Android</h6>
+                                <p class="card-text">An Android Application used by Field Sales Agents to easily convey an order to be prepared by main office.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/blackrose9/turbo-requisition" target="_blank" class="card-link">Github Repo</a>
+                        </div> 
+                    </article>
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">
+                                <h5 class="card-title font-weight-bold">Journal App</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Android</h6>
+                                <p class="card-text">A fun little journal application that allows you to enter journal entries or notes easily and delete them even easier.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/blackrose9/animated-first" target="_blank" class="card-link">Github Repo</a>
                         </div>
                     </article>
-                    <article class="card-body col-md-3" style="background-image: url('./img/projects/journalcode.PNG');">
-                        <div class="content">
-                            <h5 class="card-title">Journal App</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Android</h6>
-                            <p class="card-text">A fun little journal application that allows you to enter journal entries or notes easily and delete them even easier.</p>
-                            <a href="https://github.com/blackrose9/animated-first" class="card-link">Github Repo</a>
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">
+                                <h5 class="card-title font-weight-bold">Fun Challenges</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">JavaScript / Java</h6>
+                                <p class="card-text">A compilation of my solutions some short fun coding activities.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/blackrose9/friendly-challenges" target="_blank" class="card-link">Github Repo</a>
                         </div>
                     </article>
-                    <article class="card-body col-md-3" style="background-image: url('./img/projects/challenges.PNG');">
-                        <div class="content">
-                            <h5 class="card-title">Fun Challenges</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">JavaScript / Java</h6>
-                            <p class="card-text">A compilation of my solutions some short fun coding activities.</p>
-                            <a href="https://github.com/blackrose9/friendly-challenges" class="card-link">Github Repo</a>
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">
+                                <h5 class="card-title font-weight-bold">Organisational API</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Java SPARK</h6>
+                                <p class="card-text">An API written in SPARK. Who knew that making API's was so interesting.</p>   
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/blackrose9/potential-organisational-api" target="_blank" class="card-link">Github Repo</a>
                         </div>
                     </article>
-                    <article class="card-body col-md-3" style="background-image: url('./img/projects/sparkcode.PNG');">
-                        <div class="content">
-                            <h5 class="card-title">Organisational API</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Java SPARK</h6>
-                            <p class="card-text">An API written in SPARK. Who knew that making API's was so interesting.</p>
-                            <a href="https://github.com/blackrose9/potential-organisational-api" class="card-link">Github Repo</a>
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">
+                                <h5 class="card-title font-weight-bold">School Registration System</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">C#</h6>
+                                <p class="card-text">The is a console based school registration system. It includes a fees and exam elegibilty check. Fascinating!</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/blackrose9/SS" target="_blank" class="card-link">Github Repo</a>
                         </div>
                     </article>
-                    <article class="card-body col-md-3" style="background-image: url('./img/projects/ccode.PNG');">
-                        <div class="content">
-                            <h5 class="card-title">School Registration System</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">C#</h6>
-                            <p class="card-text">The is a console based school registration system. It includes a fees and exam elegibilty check. Fascinating!</p>
-                            <a href="https://github.com/blackrose9/SS" class="card-link">Github Repo</a>
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">
+                                <h5 class="card-title font-weight-bold">Didactic-Writer</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">React</h6>
+                                <p class="card-text">A Portfolio created using React and utilizing the Blogger API</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6">
+                                    <a href="https://github.com/blackrose9/didactic-writer" target="_blank" class="card-link">Github Repo</a> 
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6">
+                                    <a href="https://blackrose9.github.io/didactic-writer/#/" target="_blank" class="card-link float-right">Live Site</a> 
+                                </div>
+                            </div>
                         </div>
                     </article>
-                    <article class="card-body col-md-3" style="background-image: url('./img/projects/ccode.PNG');">
-                        <div class="content">
-                            <h5 class="card-title">Didactic-Writer</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">React</h6>
-                            <p class="card-text">A Portfolio created using React and utilizing the Blogger API</p>
-                            <a href="https://github.com/blackrose9/didactic-writer" class="card-link">Github Repo</a> 
-                            <a href="https://blackrose9.github.io/didactic-writer/#/" class="card-link">Live Site</a> 
+                    <article class="card col-12 col-sm-12 col-md-3">
+                        <div class="card-body">
+                            <div class="content">
+                                <h5 class="card-title font-weight-bold">My Github</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">blackrose9</h6>
+                                <p class="card-text">If you haven't already... what are you waiting for? Check out the other stuff I have done on my Github Repository.</p>
+                            </div>
                         </div>
-                    </article>
-                    <article class="card-body col-md-3" style="background-image: url('./img/projects/csscode.PNG');">
-                        <div class="content">
-                            <h5 class="card-title">My Github</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">blackrose9</h6>
-                            <p class="card-text">If you haven't already... what are you waiting for? Check out the other stuff I have done on my Github Repository.</p>
-                            <a href="https://github.com/blackrose9" class="card-link">My Work</a>
+                        <div class="card-footer">
+                            <a href="https://github.com/blackrose9" target="_blank" class="card-link">My Work</a>
                         </div>
                     </article>
                 </div>
             </section>
-    
+            <!-- end of projects section -->
+            
+            <!-- start of interests section -->
             <section id="interests">
                 <h3>Interests</h3>
                 <a name="interests"></a>
                 <div class="row">
-                    <article class = "fun col-sm-3" id="fun1">
-                        <h4>Space Exploration</h2>
-                        <p>Anything to do with Space and Science always piques my intrest. I would be an astronomer, astronaut or scientist in another life.</p>
+                    <article class = "fun col-12 col-sm-12 col-md-3" id="fun1">
+                        <div class="card">
+                            <img src="./img/space.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Anything to do with Space and Science always piques my intrest. I would be an astronomer, astronaut or scientist in another life.</p>
+                            </div>
+                          </div>
                      </article>
-                     <article class = "fun col-sm-3" id="fun2">
+                     <article class = "fun col-12 col-sm-12 col-md-3" id="fun2">
                         <h4>Gaming</h2>
                         <p>This past time activity is one I take very seriously. A way to relieve stress and sharpen my focus. </p>
                      </article>
-                     <article class = "fun col-sm-3" id="fun3">
+                     <article class = "fun col-12 col-sm-12 col-md-3" id="fun3">
                         <h4>Writing</h2>
                         <p>When I am not reading, I am writing. I write short pieces and long peices. I enjoy expressing myself with words and making something memorable out of words.<br/>
                         <a href="https://blackrose722.blogspot.com">My Personal Blog</a><br/>
                         <a href="https://medium.com/@greatmonk">My Tech Blog</a></p>
                      </article>
-                     <article class = "fun col-sm-3" id="fun4">
+                     <article class = "fun col-12 col-sm-12 col-md-3" id="fun4">
                         <h4>Long Journeys</h2>
                         <p>You will never hear me complaining about a 7 hour journey. Driving, Flying, Sailing? Count me in! It's a time to see new places, new things and just enjoy the time to think, get inspiration or even a new perspective.<br/>
                         <a href="https://www.instagram.com/sarahfab722/">My Adventures</a></p>
                      </article>
                 </div>
             </section>
+            <!-- end of interests section -->
 
+            <!-- start of skills section -->
             <section id="skills">
                 <h3>Technical Skills</h3>
                 <a name="skills"></a>
@@ -144,7 +195,9 @@
                     <img src="img/logo/webdev.png"/> 
                 </article>
             </section>
+            <!-- end of skills section -->
     
+            <!-- start of contacts section -->
             <section id="contacts">
                 <h3>Contacts</h3>
                 <a name="contacts"></a>
@@ -154,14 +207,21 @@
                     LinkedIn: <a href="https://www.linkedin.com/in/sarah-mwendwa-0b8673120/">Sarah Mwendwa</a>
                 </h4>
             </section>
+            <!-- end of contacts section -->
         
+            <!-- start of footer -->
             <footer>
                 <p>Sarah Mwendwa &copy; 2020</p>
             </footer>
+            <!-- end of footer -->
 
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/main.js"></script>
+
+        <!-- JQuery JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
