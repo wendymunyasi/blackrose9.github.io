@@ -13,7 +13,6 @@ html {
 }
 
 body {
-   /* background: url("../img/sam.jpg") repeat center center/contain; */
    font-family: 'Raleway', sans-serif;
    color: white;
    font-size: 100%;
@@ -55,7 +54,6 @@ body {
 /* Content Styling */
 #pageContent {
    margin-left: 10%;
-   /* width: 100vw; */
    padding: 0px 10px;
 }
 
@@ -66,12 +64,8 @@ h3 {
 
 /* Individual Section Styling */
 section {
-   /* height: 100vh; */
-   /* width: 89vw; */
    padding: 5%;
    border-bottom: 10px solid whitesmoke;
-   /* background-color: white;
-   opacity: 0.5; */
 }
 
 /* home section styles */
@@ -154,61 +148,15 @@ section#interests .container-fluid .card .content {
    padding: 10px 15px;
    text-align: center;
    color: #111;
-   /* visibility: hidden; */
-   /* opacity: 0; */
    transition: 0.3s ease-in-out;
 }
 
 section#interests .container-fluid .card:hover .content {
-   /* visibility: visible; */
    opacity: 1;
    margin-top: 0px;
    transition-delay: 0.3s;
 }
 
-section#interests .fun {
-   padding: 0;
-   background-color: white;
-   border-right: 2px solid rgb(0, 0, 54);
-}
-
-section#interests .fun h4 {
-   font-weight: bold;
-   padding: 10%;
-   background-size: cover;
-   height: 30%;
-}
-
-section#interests .fun p {
-   color: rgb(0, 0, 54);
-   padding: 5%;
-}
-
-section#interests .fun a {
-   color: rgb(0, 0, 54);
-   text-decoration: underline;
-   font-style: italic;
-}
-
-section#interests #fun1 h4 {
-   /* background-image: url("../img/space.jpg"); */
-}
-
-section#interests #fun2 h4 {
-   background-image: url("../img/gaming.jpg");
-}
-
-section#interests #fun3 h4 {
-   background-image: url("../img/writing.jpg");
-}
-
-section#interests #fun4 {
-   border-right: none;
-}
-
-section#interests #fun4 h4 {
-   background-image: url("../img/compass1.jpg");
-}
 
 /* skills section styles */
 section#skills {
@@ -222,7 +170,6 @@ section#skills #logos img {
 
 /* contacts section styles */
 section#contacts {
-   /* height: 50vh; */
    background: url("../img/milkyway.jpg") no-repeat center center/cover;
 }
 
@@ -239,4 +186,11 @@ section#contacts #contacts h4 a {
 footer {
    padding: 0.5%;
    background: url("../img/milkyway.jpg") no-repeat center center/cover;
+}
+
+
+@media screen and (max-width:768px) {
+   #pageNavigation {
+      display: none;
+   }
 }
